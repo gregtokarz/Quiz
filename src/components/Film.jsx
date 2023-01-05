@@ -4,6 +4,7 @@ import star from '../img/gstar.svg';
 
 const Film = () => {
     return (
+        <a href="description" style={{textDecoration: 'none'}}>
         <div class='rounded-top' style={{width: '300px', height: '300px', backgroundColor: '#c9c2c1'}}>
             <div className="text-center bg-info text-white fs-3 fw-bolder rounded-top border">Zielona Mila</div>
 
@@ -14,6 +15,7 @@ const Film = () => {
 
 
         </div>
+        </a>
     );
 };
 

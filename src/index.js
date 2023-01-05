@@ -4,11 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Signup from "./components/Signup";
+import Signin from "./components/Signin";
+import Add from "./components/Add";
+import Description from "./components/Description";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<App/>} />
+              <Route path="signup" element={<Signup />} />
+              <Route path="signin" element={<Signin />} />
+              <Route path="add" element={<Add />} />
+              <Route path="description" element={<Description />} />
+          </Routes>
+
+
+
+      </BrowserRouter>
   </React.StrictMode>
 );
 
