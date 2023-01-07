@@ -41,6 +41,11 @@ body{
   background-image: url("./img/back2.jpg");
 }
 
-#ba{
-  background-image: url("./img/back4.jpg");
+#id{
+  background-image: url("./img/whirlpool.png");
+  background-size: cover;
+}
+
+.navbar{
+  color: white;
 }
