@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './components/Logo'
+import Search from './components/Search'
+import Film from './components/Film'
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import Footer from "./components/Footer";
+import React from "react";
+import description from "./components/Description";
+import {Link} from "react-router-dom";
+import Navigator from "./components/Navigator";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div  style={{width: '1000px', margin: 'auto'}}>
+      <div>
+        <Logo/>
+        <Navigator />
+      </div>
+      <div id="id">
+        <Film/>
+      </div>
+
+      <Footer/>
+
     </div>
   );
 }

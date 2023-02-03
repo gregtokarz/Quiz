@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-image: url("../../movie-base/src/img/back2.jpg");
+}
+
+#id{
+  background-image: url("../../movie-base/src/img/carbon_fibre.png");
+
+}
+
+.navbar{
+  color: white;
+}
